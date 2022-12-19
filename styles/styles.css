@@ -6,21 +6,21 @@
     }
 
     body{
-		font-family: 'Comfortaa', cursive;
-		font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
 	}
     .header{
         background-color: white;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 30% 70%;
         position: sticky;
         top: 0;
+        box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
     }
 
     .img{
         height: 100px;
         width: 300px;
-        margin-top: 4%;
+        margin-left: 4%;
     }
 
     .header div{
@@ -29,20 +29,53 @@
 
     .menu ul{
         display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        margin-top: 10%;
-        margin-right:10%;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        margin-top: 5%;
 
     }
 
     .menu ul li {
+        text-align: center;
         list-style: none;
         margin-right: 10%;
     }
     .menu ul li a{
         text-decoration: none;
-        font-size: 18px;
-        align-items: center;
+        font-size: 14px;
+        text-align: center;
     }
+
+    #section-presentation{
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    #section-presentation h1{
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline #B22222;
+        line-height: 2px;
+        color:#003785;
+    }
+    .whoweare{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .whoweare div h3{
+        text-align: justify;
+        line-height: 40px;
+    }
+
+    .img-whoweare{
+        height: 380px;
+        width: 440px;
+        margin-left: 18%;
+    }
+
 
 }
