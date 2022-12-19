@@ -3,17 +3,31 @@
 
     html{
         scroll-behavior: smooth;
+
     }
 
     body{
         font-family: 'Montserrat', sans-serif;
 	}
+    #layout{
+        padding:5px;
+
+        grid-column-gap:5px;
+        grid-row-gap:5px;
+        display:grid;
+        grid-template-areas:
+            'section-presentation'
+            'section-look-for'
+            'section-what-we-offer'
+            'section-our-team'
+            'section-contact';
+    }
     .header{
         background-color: white;
         display: grid;
         grid-template-columns: 30% 70%;
-        position: sticky;
         top: 0;
+        position: sticky;
         box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
     }
 
@@ -46,9 +60,11 @@
     }
 
     #section-presentation{
-        width: 100%;
-        margin-top: 10%;
-        margin-bottom: 10%;
+    scroll-margin: 200px;
+    height: 100%;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     }
 
     #section-presentation h1{
@@ -75,6 +91,43 @@
         height: 380px;
         width: 440px;
         margin-left: 18%;
+    }
+
+    #section-look-for{
+        background-color: #003785;
+        text-align: center;
+        scroll-margin: 200px;
+        height: 100%;
+        width: 100%;
+        margin-top: 5%;
+        margin-bottom: 10%;
+    }
+
+    #section-look-for div{
+        margin-top: 10%;
+    }
+
+    #section-look-for h1{
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline #B22222;
+        line-height: 2px;
+        color:white;
+    }
+
+    #section-look-for h3{
+        color: white;
+        text-align: center;
+        line-height: 40px;
+    }
+    .look-for-ideas-1{
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+        grid-gap: 2%;
+    }
+
+    .look-for-ideas-1 div{
+        background-color: white;
     }
 
 
