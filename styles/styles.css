@@ -16,6 +16,7 @@
         grid-row-gap:5px;
         display:grid;
         grid-template-areas:
+            'header'
             'section-presentation'
             'section-look-for'
             'section-what-we-offer'
@@ -27,6 +28,7 @@
         display: grid;
         grid-template-columns: 30% 70%;
         top: 0;
+        width: 100%;
         position: sticky;
         box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
     }
@@ -61,8 +63,6 @@
 
     #section-presentation{
     scroll-margin: 200px;
-    height: 100%;
-    width: 100%;
     margin-top: 5%;
     margin-bottom: 5%;
     }
@@ -99,10 +99,11 @@
         scroll-margin: 100px;
         height: 100%;
         width: 100%;
-        margin-top: 5%;
-        margin-bottom: 10%;
     }
 
+    #section-look-for div{
+        padding:2%
+    }
 
 
     #section-look-for h1{
@@ -131,19 +132,12 @@
        background-color: white;
        border-radius: 10px;
        height: auto;
-       margin-bottom: 5%;
+       padding: 5%;
     }
     .look-for-ideas-1 div h3{
         color: #003785 !important;
     }
 
-    #look-for-ideas-1-1-2 h3{
-        margin:10%
-    }
-
-    #look-for-ideas-1-3 img{
-       margin:5%;
-    }
 
     .img-look-for{
         height: 50px;
@@ -152,16 +146,20 @@
 
     .look-for-ideas-2{
         display: grid;
-        grid-template-columns: 33.33% 33.33%;
-        grid-gap: 2%;
-        margin-left: 3%;
-        margin-right: 7%;
+        grid-template-columns: 40% 40%;
+        grid-gap: 6%;
+        margin-left: 12%;
     }
 
     .look-for-ideas-2 div{
         background-color: white;
         border-radius: 10px;
         height: auto;
+        padding: 5%;
+    }
+
+    .look-for-ideas-2 div h3{
+        color: #003785 !important;
     }
 
 }
