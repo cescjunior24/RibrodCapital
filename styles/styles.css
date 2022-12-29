@@ -78,6 +78,7 @@
         margin-left: 10%;
         margin-right: 10%;
         margin-top: 5%;
+        margin-bottom: 5%;
         display: grid;
         grid-template-columns: 50% 50%;
     }
@@ -102,7 +103,8 @@
     }
 
     #section-look-for div{
-        padding:2%
+        padding:4%;
+
     }
 
 
@@ -161,5 +163,104 @@
     .look-for-ideas-2 div h3{
         color: #003785 !important;
     }
+
+    #section-what-we-offer{
+        margin-top: 10%;
+        margin-bottom: 13%;
+        background-color: white;
+        scroll-margin: 100px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #section-what-we-offer h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 5%;
+        text-decoration: underline #B22222;
+        line-height: 2px;
+        color: #003785;
+    }
+
+    #section-what-we-offer h3{
+        text-align: center;
+        margin-bottom: 2%;
+    }
+
+    .container-section-what-we-offer{
+        display: grid;
+        grid-template-columns: 45% 45%;
+        grid-gap: 10%;
+        margin-right: 10%;
+        margin-top:5%;
+        margin-left: 10%;
+        align-items: center;
+    }
+    .container-section-what-we-offer div{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        
+    } 
+    .container-section-what-we-offer h3{
+        color: white;
+    }
+
+    .what-we-offer-background1{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../people-ge1c2c8e33_1280.jpg");
+        border-radius: 10px;
+        background-size: cover;
+        padding: 5%;
+    }
+
+    .what-we-offer-background2{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../berlin-g901ae1d06_1280.jpg");
+        border-radius: 10px;
+        background-size: cover;
+        padding: 5%;
+    }
+    .what-we-offer-background3{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../fiber-g760b49bf7_1280.jpg");
+        border-radius: 10px;
+        background-size: cover;
+        padding: 5%;
+    }
+    .what-we-offer-background4{
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../skyscrapers-g812518bec_1920.jpg");
+        border-radius: 10px;
+        background-size: cover;
+        padding: 5%;
+    }
+
+    #section-our-team{
+        background-color: #003785;
+        text-align: center;
+        scroll-margin: 100px;
+        height: 100%;
+        width: 100%;
+    }
+
+    #section-our-team h1{
+        text-align: center;
+        font-size: 40px;
+        text-decoration: underline #B22222;
+        line-height: 2px;
+        color: white;
+    }
+
+    .container-members{
+        display: grid;
+        grid-template-columns: 46% 46%;
+        grid-gap: 2%;
+        padding: 5%;
+    }
+
+    .container-members img{
+        width: 350px;
+        height: 450px;
+    }
+    
+
+   
+
 
 }
