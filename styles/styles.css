@@ -233,7 +233,6 @@
 
     #section-our-team{
         background-color: #003785;
-        text-align: center;
         scroll-margin: 100px;
         height: 100%;
         width: 100%;
@@ -244,21 +243,39 @@
         font-size: 40px;
         text-decoration: underline #B22222;
         line-height: 2px;
+        margin-top: 10%;
         color: white;
     }
 
-    .container-members{
+    .container-members-1,.container-members-2{
         display: grid;
-        grid-template-columns: 46% 46%;
+        grid-template-columns: 32% 32% 32%;
         grid-gap: 2%;
+        padding: 3%;
+    }
+    .container-members-1 img, .container-members-2 img{
+        height: 280px;
+        width: 200px;
+        text-align: center;
+        border-radius: 10px;
+
+    }
+    .member{
+        background-color: white;
+        border-radius: 10px;
+        border:solid #B22222;
+        border-width: 2px;
+        text-align: center;
         padding: 5%;
     }
-
-    .container-members img{
-        width: 350px;
-        height: 450px;
+    .member p{
+        font-size: 15px;
     }
-    
+    .container-members-2{
+        margin-bottom: 5%;
+    }
+
+
 
    
 
