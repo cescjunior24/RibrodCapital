@@ -275,9 +275,42 @@
         margin-bottom: 5%;
     }
 
+    #section-contact{
+        scroll-margin: 200px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        text-align: center;
+    }
+
+    #section-contact  h1{
+        text-align: center;
+        font-size: 40px;
+        margin-bottom: 5%;
+        text-decoration: underline #B22222;
+        line-height: 2px;
+        color: #003785;
+
+    }
 
 
-   
+    .form-contact{
+        text-align: center;
+        border-radius: 10px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #contact-form-container{
+        width :50%;
+        padding: 5%;
+    }
+
+    #contact-form-container{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+
 
 
 }
