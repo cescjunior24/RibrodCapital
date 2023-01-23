@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1300px){
 
 
     html{
@@ -31,6 +31,10 @@
         width: 100%;
         position: sticky;
         box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
+    }
+
+    #menu-check{
+        display: none;
     }
 
     .img{
@@ -280,7 +284,7 @@
     }
     .container-members-1 img, .container-members-2 img{
         height: 280px;
-        width: 200px;
+        width: 280px;
         text-align: center;
         border-radius: 10px;
 
@@ -409,8 +413,31 @@
     .icons-footer i:hover{
         color:#B22222;
     }
+}
 
+@media only screen and (max-width:1299px) {
 
+    html{
+        scroll-behavior: smooth;
 
+    }
 
+    body{
+        font-family: 'Montserrat', sans-serif;
+	}
+
+    #layout{
+        padding:5px;
+
+        grid-column-gap:5px;
+        grid-row-gap:5px;
+        display:grid;
+        grid-template-areas:
+            'header'
+            'section-presentation'
+            'section-look-for'
+            'section-what-we-offer'
+            'section-our-team'
+            'section-contact';
+    }
 }
