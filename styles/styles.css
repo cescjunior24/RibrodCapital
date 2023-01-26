@@ -33,7 +33,11 @@
         box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
     }
 
-    #menu-check{
+    .menu-icon,#check{
+        display: none;
+    }
+
+    .container-checkbox{
         display: none;
     }
 
@@ -425,10 +429,8 @@
     body{
         font-family: 'Montserrat', sans-serif;
 	}
-
     #layout{
         padding:5px;
-
         grid-column-gap:5px;
         grid-row-gap:5px;
         display:grid;
@@ -439,5 +441,126 @@
             'section-what-we-offer'
             'section-our-team'
             'section-contact';
+    }
+
+    .header{
+        background-color: white;
+        position: sticky;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
+        display: grid;
+        grid-template-columns: 90% 10%;
+    }
+
+    .container-icon img{
+        height: 100px;
+        width: 300px;
+        margin-left: 4%;
+    }
+    .menu{
+        width: 100%;
+        text-align: center;
+
+    }
+    .menu-icon img{
+        width: 30px;
+        height:30px;
+        border-radius:2px;
+    }
+
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+    .menu{
+        display: block;
+    }
+    .menu ul{
+        display: block;
+        position: fixed;
+        top:70px;
+        left: -110%;
+        background-color: white;
+        width: 100%;
+        right: 0;
+    }
+
+    .menu ul li{
+        padding: 2rem;
+        list-style:none;
+    }
+
+    .menu ul li a{
+        text-decoration: none;
+    }
+
+
+    #check{
+        display: none;
+    }
+
+    #check:checked ~ ul{
+        left: 0;
+        transition: 0.5s;
+    }
+    #check:not(:checked)~ul{
+        left: -110%;
+        transition: 0.5s;
+    }
+    .menu ul li a{
+        display: block;
+        text-decoration: none;
+        font-weight:bold;
+        color: #003785;
+    }
+    .menu ul li a:hover{
+        color: #B22222;
+    }
+
+    #section-presentation{
+    scroll-margin: 200px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    }
+
+    #section-presentation h1{
+        text-align: center;
+        font-size: 40px;
+        line-height: 2px;
+        color:#003785;
+    }
+
+    .whoweare h1{
+        text-decoration: underline #B22222;
+        text-underline-offset: 0.25em;
+    }
+    .whoweare{
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    .whoweare div{
+        margin-top: 8%;
+    }
+    .whoweare div h3{
+        text-align: center;
+        line-height: 40px;
+    }
+
+    .img-whoweare{
+        height: 380px;
+        width: 440px;
+    }
+
+    .container-img-section-presentation{
+        text-align: center;
     }
 }
