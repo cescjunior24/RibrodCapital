@@ -404,6 +404,7 @@
         margin-top: 5%;
         display: grid;
         grid-template-columns: 33.33% 33.33% 33.33%;
+        margin-bottom: 5%;
     }
 
     .icons-footer i{
@@ -838,6 +839,7 @@
         margin-top: 5%;
         display: grid;
         grid-template-columns: 33.33% 33.33% 33.33%;
+        margin-bottom: 5%;
     }
 
     .icons-footer i{
