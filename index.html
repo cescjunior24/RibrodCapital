@@ -2,12 +2,14 @@
 <html>
 <head>
   <title>RIBROD CAPITAL</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
   <link href="styles/styles.css" rel="stylesheet" type="text/css">
+  <script src="scripts.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/01424de658.js" crossorigin="anonymous"></script>
 </head>
 <body>
-
   <div id="layout">
     <header class="header">
       <div class="container-icon">
@@ -18,12 +20,12 @@
         <label for="check" class="checkbtn">
           <i class="menu-icon"><img src="burguer.svg" alt=""></i>
         </label>
-            <ul>
-              <li id="check-list"><a href="#section-presentation">WHO WE ARE</a></li>
-              <li><a href="#section-look-for">WHAT WE LOOK FOR</a></li>
-              <li><a href="#section-what-we-offer">WHAT WE OFFER</a></li>
-              <li><a href="#section-our-team">OUR TEAM</a></li>
-              <li><a href="#section-contact">CONTACT</a></li>
+            <ul id="menu">
+              <li id="check-list"><a onclick="myFunction()" href="#section-presentation">WHO WE ARE</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-look-for">WHAT WE LOOK FOR</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-what-we-offer">WHAT WE OFFER</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-our-team">OUR TEAM</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-contact">CONTACT</a></li>
             </ul>
       </div>
     </header>
