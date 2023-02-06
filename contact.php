@@ -6,6 +6,7 @@ if($_POST){
     $organitzation= "";
     $mail = "";
     $subject = ""; 
+    $mailpropietario="francescg98@gmail.com";
 
     if(isset($_POST['first_name'])) {
         $first_name = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING);
@@ -25,14 +26,16 @@ if($_POST){
     }
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
-    .'From: ' . $first_name . "\r\n";
+    .'From: ' . $mail . "\r\n";
     
-    if(mail($first_name, $mail, $subject, $headers)) {
+    if(mail($mailpropietario, $organitzation, $subject, $headers)) {
     	echo "<p>Thank you for contacting us, $first_name . You will get a reply within 24 hours.</p>";
     } 
     else {
     	echo '<p>We are sorry but the email did not go through.</p>';
     }
+
+
     
 
 }
