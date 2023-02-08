@@ -8,22 +8,26 @@ if($_POST){
     $subject = ""; 
     $mailpropietario="francescg98@gmail.com";
 
-    if(isset($_POST['first_name'])) {
-        $first_name = filter_var($_POST['first_name'], FILTER_SANITIZE_STRING);
+    if (!filter_var($first_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z]+$/")))) {
+        echo "Invalid first name";
     }
-    if(isset($_POST['last_name'])) {
-        $last_name= filter_var($_POST['last_name'], FILTER_SANITIZE_STRING);
+    
+    if (!filter_var($last_name, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z]+$/")))) {
+        echo "Invalid last name";
     }
-    if(isset($_POST['organitzation'])) {
-        $organitzation = filter_var($_POST['organitzation'], FILTER_SANITIZE_STRING);
+    
+    if (!filter_var($organitzation, FILTER_VALIDATE_REGEXP, array("options"=>array("regexp"=>"/^[a-zA-Z0-9]+$/")))) {
+        echo "Invalid organization";
     }
-    if(isset($_POST['mail'])) {
-    	$mail = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['mail']);
-    	$mail = filter_var($mail, FILTER_VALIDATE_EMAIL);
+    
+    if (!filter_var($mail, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email address";
     }
-    if(isset($_POST['subject'])) {
-    	$subject = htmlspecialchars($_POST['subject']);
+    
+    if (empty($subject)) {
+        echo "Subject is required";
     }
+    
     $headers  = 'MIME-Version: 1.0' . "\r\n"
     .'Content-type: text/html; charset=utf-8' . "\r\n"
     .'From: ' . $mail . "\r\n";
