@@ -236,26 +236,26 @@
     }
 
     .what-we-offer-background1{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../people-ge1c2c8e33_1280.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/people-ge1c2c8e33_1280.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
     }
 
     .what-we-offer-background2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../berlin-g901ae1d06_1280.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/berlin-g901ae1d06_1280.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
     }
     .what-we-offer-background3{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../fiber-g760b49bf7_1280.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/fiber-g760b49bf7_1280.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
     }
     .what-we-offer-background4{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../skyscrapers-g812518bec_1920.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/skyscrapers-g812518bec_1920.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
