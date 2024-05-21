@@ -9,6 +9,7 @@
     body{
         font-family: 'Montserrat', sans-serif;
 	}
+
     #layout{
         padding:5px;
 
@@ -23,6 +24,7 @@
             'section-our-team'
             'section-contact';
     }
+
     .header{
         background-color: white;
         display: grid;
@@ -31,6 +33,7 @@
         width: 100%;
         position: sticky;
         box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
+        z-index: 999;
     }
 
     .menu-icon,#check{
@@ -53,17 +56,19 @@
     .menu{
         margin-top: 2.5%;
         margin-right: 5%;
+        margin-left: 5%;
     }
 
     .menu ul{
         list-style-type: none;
         margin: 0;
         padding: 0;
+        text-align: right;
         overflow: hidden;
     }
 
     .menu ul li {
-        float: right;
+        float: left;
     }
     .menu ul li a{
         display: block;
@@ -91,12 +96,11 @@
         font-size: 40px;
         line-height: 2px;
         color:#003785;
-    }
-
-    .whoweare h1{
         text-decoration: underline #B22222;
         text-underline-offset: 0.25em;
     }
+
+
     .whoweare{
         margin-left: 10%;
         margin-right: 10%;
@@ -118,12 +122,54 @@
     }
 
     #section-look-for{
-        background-color: #003785;
+        position: relative;
+        background-image: url('../img/cup-of-coffee-1280537.jpg');
         text-align: center;
         scroll-margin: 100px;
         height: 100%;
         width: 100%;
     }
+    #section-look-for::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.5; 
+        filter: blur(5px);
+        z-index: 1;
+      }
+
+
+    .container-title,h3{
+        position: relative;
+        z-index: 2;
+    }
+
+    .look-for-ideas{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 6%;
+        position: relative;
+        z-index: 2;
+    }
+    .look-for-ideas-1-2 {
+        margin-top: 2%;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: auto;
+        z-index: 2;
+        height: 100px; /* Establece una altura fija para todas las cards */
+        border-radius: 10px; /* Agrega borde redondeado */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+        transition: transform 0.3s ease; /* Agrega una transición para el efecto al pasar el mouse */
+      }
+      
+      .look-for-ideas-1-2:hover {
+        transform: translateY(-5px); /* Incrementa la posición hacia arriba al pasar el mouse */
+      }
+      
 
     #section-look-for div{
         padding:4%;
@@ -148,27 +194,12 @@
         text-align: center;
         line-height: 40px;
     }
-    .look-for-ideas-1{
-        display: grid;
-        grid-template-columns: 33.33% 33.33% 33.33%;
-        grid-gap: 2%;
-        margin-left: 3%;
-        margin-right: 7%;
-        
-    }
 
-    .look-for-ideas-1 div{
-       background-color: white;
-       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-       border-radius: 10px;
-       height: auto;
-       padding: 5%;
-    }
     .look-for-ideas-1 div h3{
         color: #003785 !important;
     }
 
-
+/* 
     .img-look-for{
         height: 50px;
         width: 50px;
@@ -191,7 +222,7 @@
 
     .look-for-ideas-2 div h3{
         color: #003785 !important;
-    }
+    } */
 
     #section-what-we-offer{
         margin-top: 10%;
@@ -406,6 +437,25 @@
         grid-template-columns: 33.33% 33.33% 33.33%;
         margin-bottom: 5%;
     }
+    .directions-footer{
+        margin-left: 25%;
+        text-align: left;
+    }
+    .menu-footer{
+        cursor: pointer;
+    }
+    .menu-footer p:hover{
+        text-decoration: underline;
+        transition: 0.5s;
+    }
+    .menu-footer a{
+        text-decoration: none;
+        color: white;
+    }
+    .icons-footer a{
+        color:white !important;
+        cursor: pointer;
+    }
 
     .icons-footer i{
         font-size: 25px;
@@ -415,6 +465,22 @@
 
     .icons-footer i:hover{
         color:#B22222;
+    }
+
+    .icon-lenguage-1{
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+    .icon-lenguage-2{
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+    .iconos-lenguage{
+        position: fixed;
+        top: 1%;
+        right: 7%;
     }
 }
 
@@ -442,7 +508,7 @@
             'section-contact';
     }
 
-    .header{
+    .header {
         background-color: white;
         position: sticky;
         top: 0;
@@ -450,7 +516,9 @@
         box-shadow: 0 2px 8px -2px rgb(0 32 37 / 10%);
         display: grid;
         grid-template-columns: 90% 10%;
-    }
+        z-index: 999; /* Asegura que el encabezado esté en la capa superior */
+      }
+      
 
     .container-icon img{
         height: 100px;
@@ -534,12 +602,10 @@
         font-size: 40px;
         line-height: 2px;
         color:#003785;
-    }
-
-    .whoweare h1{
         text-decoration: underline #B22222;
         text-underline-offset: 0.25em;
     }
+
     .whoweare{
         margin-left: 10%;
         margin-right: 10%;
@@ -563,12 +629,51 @@
         text-align: center;
     }
     #section-look-for{
-        background-color: #003785;
+        position: relative;
+        background-image: url('../img/cup-of-coffee-1280537.jpg');
         text-align: center;
         scroll-margin: 100px;
         height: 100%;
         width: 100%;
     }
+    #section-look-for::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0.5; 
+        filter: blur(5px);
+        z-index: 1;
+      }
+
+
+    .container-title,h3{
+        position: relative;
+        z-index: 2;
+    }
+
+    .look-for-ideas{
+        position: relative;
+        z-index: 2;
+    }
+    .look-for-ideas-1-2 {
+        margin-top: 2%;
+        background-color: rgba(255, 255, 255, 0.9);
+        width: auto;
+        z-index: 2;
+        height: 100px; /* Establece una altura fija para todas las cards */
+        border-radius: 10px; /* Agrega borde redondeado */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Agrega una sombra */
+        transition: transform 0.3s ease; /* Agrega una transición para el efecto al pasar el mouse */
+      }
+      
+      .look-for-ideas-1-2:hover {
+        transform: translateY(-5px); /* Incrementa la posición hacia arriba al pasar el mouse */
+      }
+      
 
     #section-look-for div{
         padding:4%;
@@ -578,6 +683,8 @@
     .container-title{
         text-align: center;
     }
+
+
     .container-title h1{
         font-size: 40px;
         line-height: 2px;
@@ -591,45 +698,15 @@
         text-align: center;
         line-height: 40px;
     }
-    .look-for-ideas-1{
-        display: flex;
-    }
-    .look-for-ideas-1 div{
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: 10px;
-        height: auto;
-        padding: 5%;
-        width: 50%;
-        margin-top: 5%;
-        margin:2%;
-     }
-     .look-for-ideas-1 div h3{
+
+    .look-for-ideas-1 div h3{
         color: #003785 !important;
     }
+/* ================================================================================================= */
 
 
-    .img-look-for{
-        height: 50px;
-        width: 50px;
-    }
-    .look-for-ideas-2{
-        display: flex;
-    }
-    .look-for-ideas-2 div{
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-        border-radius: 10px;
-        height: auto;
-        padding: 5%;
-        width: 50%;
-        margin: 2%;
-    }
 
-    .look-for-ideas-2 div h3{
-        color: #003785 !important;
-    }
-
+/* ================================================================================================= */
     #section-what-we-offer{
         margin-top: 10%;
         margin-bottom: 13%;
@@ -669,30 +746,30 @@
     } 
     .container-section-what-we-offer h3{
         color: white;
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .what-we-offer-background1{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../people-ge1c2c8e33_1280.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/people-ge1c2c8e33_1280.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
     }
 
     .what-we-offer-background2{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../berlin-g901ae1d06_1280.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/berlin-g901ae1d06_1280.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
     }
     .what-we-offer-background3{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../fiber-g760b49bf7_1280.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/fiber-g760b49bf7_1280.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
     }
     .what-we-offer-background4{
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../skyscrapers-g812518bec_1920.jpg");
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/skyscrapers-g812518bec_1920.jpg");
         border-radius: 10px;
         background-size: cover;
         padding: 5%;
@@ -833,6 +910,7 @@
         background-color: #003785;
         color: white;
         text-align: center;
+        font-size: 10px;
     }
 
     .container-footer{
@@ -847,9 +925,45 @@
         margin-right: 1%;
 
     }
+    .menu-footer a{
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+    }
 
     .icons-footer i:hover{
         color:#B22222;
+    }
+    .directions-footer{
+        margin-left: 25%;
+        text-align: left;
+    }
+    .icons-footer a{
+        color:white !important;
+        cursor: pointer;
+    }
+
+    .menu-footer{
+        margin-top: 6%;
+    }
+
+    .icons-footer{
+        margin-top: 8%;
+    }
+    .icon-lenguage-1{
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+    .icon-lenguage-2{
+        height: 25px;
+        width: 25px;
+        cursor: pointer;
+    }
+    .iconos-lenguage{
+        position: fixed;
+        top: 0%;
+        right: 2%;
     }
 
 

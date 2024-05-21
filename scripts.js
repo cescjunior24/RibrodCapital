@@ -10,3 +10,18 @@ function myFunction() {
 }
 
 
+function cambiaridiomaenglish()
+{
+    window.location.href="index.php";
+
+}
+
+function cambiaridiomaspanish()
+{
+    window.location.href="index-es.php";
+}
+
+
+
+
+

@@ -21,25 +21,29 @@
           <i class="menu-icon"><img src="img/burguer.svg" alt=""></i>
         </label>
             <ul id="menu">
-              <li id="check-list"><a onclick="myFunction()" href="#section-presentation">WHO WE ARE</a></li>
-              <li id="check-list"><a onclick="myFunction()" href="#section-look-for">WHAT WE LOOK FOR</a></li>
-              <li id="check-list"><a onclick="myFunction()" href="#section-what-we-offer">WHAT WE OFFER</a></li>
-              <li id="check-list"><a onclick="myFunction()" href="#section-our-team">OUR TEAM</a></li>
-              <li id="check-list"><a onclick="myFunction()" href="#section-contact">CONTACT</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-presentation">QUIENES SOMOS</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-look-for">QUE BUSCAMOS</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-what-we-offer">QUE OFRECEMOS</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-our-team">NUESTRO EQUIPO</a></li>
+              <li id="check-list"><a onclick="myFunction()" href="#section-contact">CONTACTO</a></li>
             </ul>
       </div>
+
     </header>
+    <div class="iconos-lenguage">
+        <a onclick="cambiaridiomaenglish()"> <img class="icon-lenguage-1" src="img/reino-unido.png" alt=""></a>
+        <a onclick="cambiaridiomaspanish()" > <img class="icon-lenguage-2" src="img/spain.png" alt=""></a>
+      </div>
       <section id="section-presentation">
+        <h1> QUIENES SOMOS</h1>
         <div class="whoweare">
           <div>
+
             <div>
-              <h1> WHO WE ARE</h1>
-            </div>
-            <div>
-              <h3>RIBROD CAPITAL is a Private Equity firm specialised in the healthcare sector.</h3>
-              <h3>We seek to invest in the pharmaceutical and biotech verticals.</h3>
-              <h3>Our main focus is to invest  in small and medium - sized mature business.</h3>
-              <h3>We provide equity capital in flexible and creative capital structures.</h3>
+              <h3>RIBROD CAPITAL es un grupo privado de inversión y asesoramiento especializado en el sector sanitario.</h3>
+              <h3>Buscamos invertir en las verticales farmacéutica y biotecnológica.</h3>
+              <h3>Nuestro enfoque principal es invertir en pequeñas y medianas empresas maduras.</h3>
+              <h3>Proporcionamos capital social en estructuras de capital flexibles y creativas.</h3>
             </div>
           </div>
           <div class="container-img-section-presentation">
@@ -51,63 +55,63 @@
       <section id="section-look-for">
         <div>
           <div class="container-title">
-            <h1>WHAT WE LOOK FOR</h1>
+            <h1>QUE BUSCAMOS</h1>
           </div>
-          <h3>Our target companies generally meet the following criteria:</h3>
+          <h3>Nuestras empresas objetivo generalmente cumplen con los siguientes criterios:</h3>
           <div class="look-for-ideas-1">
             <div id="look-for-ideas-1-1-2">
-              <h3>Revenues of $5M to $50M</h3>
+              <h3>Ingresos de $ 5M a $ 50M</h3>
               <br>
               <img class="img-look-for" src="img/revenue.png" alt="">
             </div>
             <div id="look-for-ideas-1-1-2">
-              <h3>At least $500K in free cashflow</h3>
+              <h3>Al menos $ 500K en flujo de caja libre</h3>
               <br>
               <img class="img-look-for" src="img/cash-flow.png" alt="">
             </div>
             <div id="look-for-ideas-1-3">
-              <h3>In business al least five years, with a minimum of three years of prior financial statements</h3>
+              <h3>En el negocio por lo menos cinco años, con un mínimo de tres años de estados financieros anteriores</h3>
               <img class="img-look-for" src="img/save-time.png" alt="">
             </div>
           </div>
           <div class="look-for-ideas-2">
             <div id="look-for-ideas-2-1">
-              <h3>Principal operations in Spain, we will selectively consider transactions outside of Spain</h3>
+              <h3>Principales operaciones en España, consideraremos selectivamente transacciones fuera de España</h3>
               <img class="img-look-for" src="img/spain.png" alt="">
             </div >
             <div id="look-for-ideas-2-1">
-              <h3>Strong management team, either incumbent or previously identified as part of an acquisition</h3>
+              <h3>Sólido equipo de gestión, ya sea titular o previamente identificado como parte de una adquisición</h3>
               <img class="img-look-for" src="img/trade.png" alt="">
             </div>
           </div>
         </div>
       </section>
       <section id="section-what-we-offer">
-        <h1>WHAT WE OFFER</h1>
-        <h3>Our team has the investment experience to structure deals to meet the varied needs of management teams and business owners</h3>
+        <h1>QUE OFRECEMOS</h1>
+        <h3>Nuestro equipo tiene la experiencia de inversión para estructurar acuerdos que satisfagan las diversas necesidades de los equipos de gestión y los propietarios de empresas.</h3>
         <div class="container-section-what-we-offer">
           <div class="what-we-offer-background1">
-            <h3>Flexible acquisition, partial or full buyout</h3>
+            <h3>Adquisición flexible, compra total o parcial</h3>
           </div>
           <div class="what-we-offer-background2">
-            <h3>Debt consolidation</h3>
+            <h3>Consolidación de la deuda</h3>
           </div>
           <div class="what-we-offer-background3">
-              <h3>Recapitalisation</h3>
+              <h3>Recapitalización</h3>
           </div>
           <div class="what-we-offer-background4">
-            <h3>Corporate divestitures</h3>
+            <h3>Desinversiones corporativas</h3>
           </div>
         </div>
       </section>
       <section id="section-our-team">
-        <h1>MEET OUR TEAM</h1>
+        <h1>CONOCE NUESTRO EQUIPO</h1>
         <div class="container-members-1">
             <div>
               <div class="member">
                 <img class="member-img"src="img/marc.jpeg" alt="centered image">
                 <h3>Marc Riba</h3>
-                <h4>Founder & CEO</h4>
+                <h4>Fundador y CEO</h4>
               </div>
 
             </div>
@@ -115,42 +119,42 @@
               <div class="member">
                 <img class="member-img"src="img/gerarddelucas.PNG" alt="centered image">
                 <h3>Gerard de Lucas</h3>
-                <h4>Legal Counsel</h4>
+                <h4>Asesor legal</h4>
               </div>
             </div>
             <div class="member">
               <img class="member-img"src="img/MarkMyhew.jpeg" alt="centered image">
               <h3>Mark Mayhew</h3>
-              <h4> Board Member & Strategic Advisor</h4>
+              <h4>Miembro de la Junta y Asesor Estratégico</h4>
             </div>
         </div>
         <div class="container-members-2">
           <div class="member">
             <img class="member-img"src="img/quim.jpeg" alt="centered image">
-            <h3>Quim Valls Chief </h3>
-            <h4>Financial Officer</h4>
+            <h3>Quim Valls</h3>
+            <h4>Director financiero</h4>
           </div>
           <div class="member">
             <img class="member-img"src="img/julia.jpeg" alt="centered image">
             <h3>Júlia Bacaria</h3>
-            <h4>Data Protection Officer</h4>
+            <h4>Delegado de protección de datos</h4>
           </div>
           <div class="member">
             <img class="member-img"src="img/carolina.jpeg" alt="centered image">
             <h3>Carolina Andrade</h3>
-            <h4>PR & Communications Director</h4>
+            <h4>Directora de Relaciones Públicas y Comunicaciones</h4>
           </div>
         </div>
       </section>
       <section id="section-contact">
         <div>
-          <h1>CONTACT US</h1>
+          <h1>CONTÁCTENOS</h1>
         </div>
         <div class="form-contact">
           <div id="contact-form-container">
 
             <div>
-              <form action="contact.php" method="post">
+              <form action="contact.php" method="post" target="_parent">
                 <div >
                   <p>
                     <p><label for="firstname">First Name</label></p>
@@ -186,31 +190,31 @@
             <div>
               <img src="" alt="">
             </div>
-            <div>
+            <div class="directions-footer">
               <p>Carrer Tuset 23-25, 1o 8a</p>
               <p>Barcelona, Barcelona, Espanya</p>
-              <p>Teléfono: +34 615 64 86 26</p>
+              <p>Telephone: +34 615 64 86 26</p>
               <p>E-mail: m.riba.ribrodcapital@gmail.com</m></p>
             </div>
           </div>
           <div>
             <div class="menu-footer">
-              <p>Who we are</p>
-              <p>What we look for</p>
-              <p>What we offer</p>
-              <p>Our team</p>
-              <p>Contact</p>
+              <a href="#section-presentation"><p>Quienes somos</p></a>
+              <a href="#section-look-for"><p>Lo que buscamos</p></a>
+              <a href="#section-what-we-offer"><p>Lo que ofrecemos</p></a>
+              <a href="#section-our-team"><p>Nuestro equipo</p></a>
+              <a href="#section-contact"><p>Contacto</p></a>
             </div>
           </div>
           <div>
             <div>
-              <p>Follow us on:</p>
+              <p>Síguenos en:</p>
             </div>
             <div class="icons-footer">
-              <i class="fa-brands fa-linkedin"></i>
-              <i class="fa-brands fa-square-facebook"></i>
+              <a href="https://www.linkedin.com/company/88027467/admin/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <!--<i class="fa-brands fa-square-facebook"></i>
               <i class="fa-brands fa-square-twitter"></i> 
-              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-square-instagram"></i>-->
             </div>
           </div>
         </div>
