@@ -52,7 +52,7 @@
       <section id="section-look-for">
         <div>
           <div class="container-title">
-            <h1>WHAT WE LOOK FOR</h1>
+            <h1>OUR INVESTMENT STRATEGY</h1>
           </div>
           <h3>Our target companies generally meet the following criteria:</h3>
           <div class=look-for-ideas>
@@ -104,6 +104,13 @@
           </div>
           <div class="what-we-offer-background4">
             <h3>Corporate divestitures</h3>
+          </div>
+        </div>
+        <div>
+          <div class="what-we-offer-text-2">
+            <h3>We open companies to international markets such as the US, Canada, UK and Brazil. We have a strong network in these massive markets to identify
+                partnerships, grow sales and overall expand the company’s business
+                operations</h3>
           </div>
         </div>
       </section>
